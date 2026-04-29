@@ -295,6 +295,9 @@ app.post('/api/keys', (req, res) => {
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
-
 const PORT = process.env.PORT || 3002;
-app.listen(PORT, () => console.log(`🚀 Creador de APIs corriendo en http://localhost:${PORT}`));
+if (process.env.VERCEL) {
+  module.exports = app;
+} else {
+  app.listen(PORT, () => console.log(`🚀 Creador de APIs corriendo en http://localhost:${PORT}`));
+}
