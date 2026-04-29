@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creador de APIs — Daniel González</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); min-height: 100vh; color: white; padding: 20px; }
+  .header { text-align: center; margin-bottom: 28px; }
+  .header h1 { font-size: 28px; background: linear-gradient(90deg, #00d2ff, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 6px; }
+  .header p { color: #94a3b8; font-size: 13px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  @media(max-width:700px){ .grid { grid-template-columns: 1fr; } }
+  .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 20px; }
+  .card h2 { font-size: 15px; font-weight: 700; margin-bottom: 14px; color: #c4b5fd; }
+  .input-group { margin-bottom: 12px; }
+  .input-group label { display: block; font-size: 12px; color: #94a3b8; margin-bottom: 5px; }
+  input, select { width: 100%; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 9px 12px; color: white; font-size: 13px; font-family: inherit; }
+  input:focus, select:focus { outline: none; border-color: #a855f7; }
+  select option { background: #1e1b4b; }
+  .btn { width: 100%; padding: 11px; border-radius: 8px; border: none; background: linear-gradient(135deg, #667eea, #764ba2); color: white; font-size: 14px; font-weight: 600; cursor: pointer; transition: opacity 0.2s; }
+  .btn:hover { opacity: 0.85; }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .stats-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 20px; }
+  .stat-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px; text-align: center; }
+  .stat-num { font-size: 24px; font-weight: 700; background: linear-gradient(90deg,#00d2ff,#a855f7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  .stat-label { font-size: 11px; color: #64748b; margin-top: 4px; }
+  .resultado { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 20px; margin-bottom: 16px; }
+  .res-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .res-titulo { font-size: 14px; font-weight: 700; color: #c4b5fd; }
+  .badge { padding: 3px 10px; border-radius: 20px; font-size: 11px; }
+  .badge-tk  { background: rgba(251,146,60,0.2); color: #fb923c; border:1px solid rgba(251,146,60,0.3); }
+  .badge-x   { background: rgba(99,102,241,0.2); color: #a5b4fc; border:1px solid rgba(99,102,241,0.3); }
+  .badge-li  { background: rgba(14,165,233,0.2); color: #38bdf8; border:1px solid rgba(14,165,233,0.3); }
+  .badge-yt  { background: rgba(239,68,68,0.2);  color: #f87171; border:1px solid rgba(239,68,68,0.3); }
+  .item { border-top: 1px solid rgba(255,255,255,0.06); padding: 12px 0; }
+  .item:first-child { border-top: none; }
+  .item-titulo { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+  .item-meta { display: flex; gap: 12px; font-size: 11px; color: #64748b; flex-wrap: wrap; }
+  .item-meta a { color: #a5b4fc; text-decoration: none; }
+  .item-meta a:hover { text-decoration: underline; }
+  .item-texto { font-size: 12px; color: #94a3b8; margin-top: 4px; line-height: 1.5; }
+  .logs-tabla { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .logs-tabla th { text-align: left; color: #64748b; padding: 6px 8px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .logs-tabla td { padding: 6px 8px; border-bottom: 1px solid rgba(255,255,255,0.04); color: #cbd5e1; }
+  .ok  { color: #4ade80; } .err { color: #f87171; }
+  .loading { text-align: center; padding: 24px; color: #94a3b8; }
+  .spinner { width: 32px; height: 32px; border: 3px solid rgba(168,85,247,0.3); border-top-color: #a855f7; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 10px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+  .tab { flex:1; padding:9px; border-radius:8px; border:1px solid rgba(255,255,255,0.1); background:rgba(255,255,255,0.05); color:#94a3b8; cursor:pointer; font-size:13px; text-align:center; transition:all 0.2s; }
+  .tab.activo { background:linear-gradient(135deg,#667eea,#764ba2); color:white; border-color:transparent; }
+  .panel { display:none; } .panel.activo { display:block; }
+  .empty { color:#64748b; font-size:13px; text-align:center; padding:20px; }
+  .endpoint-box { background:rgba(0,0,0,0.3); border-radius:8px; padding:12px; font-size:12px; color:#a5b4fc; font-family:monospace; margin-top:10px; word-break:break-all; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>⚡ Creador de APIs</h1>
+  <p>Wrapper profesional de ScrapeCreators — listo para RapidAPI</p>
+</div>
+
+<!-- STATS -->
+<div class="stats-grid" id="statsGrid">
+  <div class="stat-box"><div class="stat-num" id="statLlamadas">-</div><div class="stat-label">Total llamadas</div></div>
+  <div class="stat-box"><div class="stat-num" id="statCreditos">-</div><div class="stat-label">Créditos usados</div></div>
+  <div class="stat-box"><div class="stat-num" id="statPlats">-</div><div class="stat-label">Plataformas activas</div></div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <div class="tab activo" onclick="tab('buscar')">🔍 Buscar</div>
+  <div class="tab" onclick="tab('docs')">📄 Endpoints</div>
+  <div class="tab" onclick="tab('logs')">📋 Logs</div>
+</div>
+
+<!-- TAB BUSCAR -->
+<div id="tab-buscar" class="panel activo">
+  <div class="grid">
+    <div class="card">
+      <h2>🔍 Probar API</h2>
+      <div class="input-group">
+        <label>Plataforma</label>
+        <select id="plataforma" onchange="toggleHandle()">
+          <option value="tiktok">🎵 TikTok</option>
+          <option value="twitter">✦ X / Twitter</option>
+          <option value="linkedin">💼 LinkedIn</option>
+          <option value="youtube">▶️ YouTube</option>
+        </select>
+      </div>
+      <div class="input-group" id="keywordGroup">
+        <label>Keyword</label>
+        <input type="text" id="keyword" placeholder="inteligencia artificial..."/>
+      </div>
+      <div class="input-group" id="handleGroup" style="display:none">
+        <label>Handle (sin @)</label>
+        <input type="text" id="handle" placeholder="OpenAI"/>
+      </div>
+      <button class="btn" onclick="buscar()">⚡ Ejecutar</button>
+    </div>
+    <div class="card">
+      <h2>📡 Request generado</h2>
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:8px">POST /api/buscar</div>
+      <pre id="requestPreview" style="background:rgba(0,0,0,0.3);border-radius:8px;padding:12px;font-size:11px;color:#a5b4fc;white-space:pre-wrap;min-height:80px"></pre>
+    </div>
+  </div>
+  <div id="resultado"></div>
+</div>
+
+<!-- TAB DOCS -->
+<div id="tab-docs" class="panel">
+  <div class="card" style="margin-bottom:16px">
+    <h2>📄 Endpoints disponibles</h2>
+    <div style="margin-top:12px">
+
+      <div style="margin-bottom:18px">
+        <div style="font-size:13px;font-weight:700;color:#4ade80;margin-bottom:4px">POST /api/buscar</div>
+        <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">Endpoint principal. Busca en la plataforma indicada.</div>
+        <div class="endpoint-box">Body: { "keyword": "IA", "plataforma": "tiktok" }<br>Body Twitter: { "handle": "OpenAI", "plataforma": "twitter" }</div>
+      </div>
+
+      <div style="margin-bottom:18px">
+        <div style="font-size:13px;font-weight:700;color:#4ade80;margin-bottom:4px">GET /api/plataformas</div>
+        <div style="font-size:12px;color:#94a3b8">Lista todas las plataformas disponibles con sus parámetros.</div>
+      </div>
+
+      <div style="margin-bottom:18px">
+        <div style="font-size:13px;font-weight:700;color:#4ade80;margin-bottom:4px">GET /api/stats</div>
+        <div style="font-size:12px;color:#94a3b8">Estadísticas de uso: llamadas, créditos, errores por plataforma.</div>
+      </div>
+
+      <div>
+        <div style="font-size:13px;font-weight:700;color:#4ade80;margin-bottom:4px">GET /api/logs?limit=50</div>
+        <div style="font-size:12px;color:#94a3b8">Historial de las últimas llamadas.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB LOGS -->
+<div id="tab-logs" class="panel">
+  <div class="card">
+    <h2>📋 Historial de llamadas</h2>
+    <div id="logsContenido" style="margin-top:12px">
+      <div class="empty">Carga los logs para verlos aquí</div>
+    </div>
+    <button class="btn" style="margin-top:14px" onclick="cargarLogs()">🔄 Cargar logs</button>
+  </div>
+</div>
+
+<script>
+function tab(id) {
+  document.querySelectorAll('.tab').forEach((t,i) => t.classList.toggle('activo', ['buscar','docs','logs'][i]===id));
+  ['buscar','docs','logs'].forEach(p => document.getElementById('tab-'+p).classList.toggle('activo', p===id));
+  if (id==='logs') cargarLogs();
+}
+
+function toggleHandle() {
+  const plat = document.getElementById('plataforma').value;
+  const esTwitter = plat === 'twitter';
+  document.getElementById('keywordGroup').style.display = esTwitter ? 'none' : 'block';
+  document.getElementById('handleGroup').style.display = esTwitter ? 'block' : 'none';
+  actualizarPreview();
+}
+
+function actualizarPreview() {
+  const plat = document.getElementById('plataforma').value;
+  const esTwitter = plat === 'twitter';
+  const val = esTwitter ? document.getElementById('handle').value || 'OpenAI' : document.getElementById('keyword').value || 'inteligencia artificial';
+  const body = esTwitter ? { handle: val, plataforma: plat } : { keyword: val, plataforma: plat };
+  document.getElementById('requestPreview').textContent = JSON.stringify(body, null, 2);
+}
+
+document.getElementById('keyword').addEventListener('input', actualizarPreview);
+document.getElementById('handle').addEventListener('input', actualizarPreview);
+document.getElementById('plataforma').addEventListener('change', actualizarPreview);
+actualizarPreview();
+
+function badgeClass(plat) {
+  return plat==='tiktok'?'badge-tk':plat==='twitter'?'badge-x':plat==='linkedin'?'badge-li':'badge-yt';
+}
+
+async function buscar() {
+  const plat = document.getElementById('plataforma').value;
+  const esTwitter = plat === 'twitter';
+  const keyword = document.getElementById('keyword').value.trim();
+  const handle = document.getElementById('handle').value.trim();
+
+  if (!esTwitter && !keyword) { alert('Escribe una keyword'); return; }
+  if (esTwitter && !handle) { alert('Escribe un handle'); return; }
+
+  document.getElementById('resultado').innerHTML = '<div class="loading"><div class="spinner"></div><p>Llamando a la API...</p></div>';
+
+  const body = esTwitter ? { handle, plataforma: plat } : { keyword, plataforma: plat };
+
+  try {
+    const r = await fetch('/api/buscar', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+    const data = await r.json();
+    cargarStats();
+
+    if (!data.success) {
+      document.getElementById('resultado').innerHTML = `<div class="resultado"><p style="color:#f87171">❌ ${data.error}</p></div>`;
+      return;
+    }
+
+    let html = `<div class="resultado">
+      <div class="res-header">
+        <div class="res-titulo">✅ ${data.total} resultados — <span class="badge ${badgeClass(plat)}">${plat}</span></div>
+        <div style="font-size:11px;color:#64748b">${new Date(data.timestamp).toLocaleTimeString('es-ES')}</div>
+      </div>`;
+
+    if (data.datos.length === 0) {
+      html += '<div class="empty">Sin resultados para esta búsqueda</div>';
+    } else {
+      data.datos.forEach(d => {
+        html += `<div class="item">
+          <div class="item-titulo">${d.titulo || d.texto?.substring(0,80) || ''}</div>
+          ${d.texto && d.texto !== d.titulo ? `<div class="item-texto">${d.texto.substring(0,200)}</div>` : ''}
+          <div class="item-meta">
+            ${d.autor ? `<span>👤 ${d.autor}</span>` : ''}
+            ${d.canal ? `<span>📺 ${d.canal}</span>` : ''}
+            ${d.likes ? `<span>❤️ ${d.likes.toLocaleString()}</span>` : ''}
+            ${d.vistas ? `<span>👁️ ${d.vistas.toLocaleString()}</span>` : ''}
+            ${d.retweets ? `<span>🔁 ${d.retweets.toLocaleString()}</span>` : ''}
+            ${d.comentarios ? `<span>💬 ${d.comentarios.toLocaleString()}</span>` : ''}
+            ${d.fecha ? `<span>${new Date(d.fecha).toLocaleDateString('es-ES')}</span>` : ''}
+            ${d.url ? `<a href="${d.url}" target="_blank">Ver →</a>` : ''}
+          </div>
+        </div>`;
+      });
+    }
+    html += '</div>';
+    document.getElementById('resultado').innerHTML = html;
+
+  } catch(e) {
+    document.getElementById('resultado').innerHTML = `<div class="resultado"><p style="color:#f87171">❌ ${e.message}</p></div>`;
+  }
+}
+
+async function cargarStats() {
+  try {
+    const r = await fetch('/api/stats');
+    const s = await r.json();
+    document.getElementById('statLlamadas').textContent = s.total_llamadas || 0;
+    document.getElementById('statCreditos').textContent = s.total_creditos_usados || 0;
+    document.getElementById('statPlats').textContent = Object.keys(s.por_plataforma || {}).length;
+  } catch(e) {}
+}
+
+async function cargarLogs() {
+  document.getElementById('logsContenido').innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+  try {
+    const r = await fetch('/api/logs?limit=50');
+    const data = await r.json();
+    if (!data.logs.length) {
+      document.getElementById('logsContenido').innerHTML = '<div class="empty">Sin logs aún</div>';
+      return;
+    }
+    let html = `<table class="logs-tabla"><thead><tr><th>Hora</th><th>Plataforma</th><th>Keyword</th><th>Resultados</th><th>Estado</th></tr></thead><tbody>`;
+    data.logs.forEach(l => {
+      const hora = new Date(l.timestamp).toLocaleTimeString('es-ES');
+      html += `<tr>
+        <td>${hora}</td>
+        <td><span class="badge ${badgeClass(l.plataforma)}">${l.plataforma}</span></td>
+        <td>${l.keyword}</td>
+        <td>${l.resultados}</td>
+        <td class="${l.error?'err':'ok'}">${l.error?'❌ Error':'✅ OK'}</td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+    document.getElementById('logsContenido').innerHTML = html;
+  } catch(e) {
+    document.getElementById('logsContenido').innerHTML = `<div class="empty" style="color:#f87171">Error cargando logs</div>`;
+  }
+}
+
+document.getElementById('keyword').addEventListener('keydown', e => { if(e.key==='Enter') buscar(); });
+document.getElementById('handle').addEventListener('keydown', e => { if(e.key==='Enter') buscar(); });
+
+cargarStats();
+</script>
+</body>
+</html>

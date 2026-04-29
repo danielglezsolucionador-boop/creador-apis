@@ -1,0 +1,280 @@
+{
+  "logs": [
+    {
+      "id": 1777428414772,
+      "timestamp": "2026-04-29T02:06:54.772Z",
+      "plataforma": "tiktok",
+      "keyword": "inteligencia artificial",
+      "resultados": 10,
+      "error": null,
+      "creditos_usados": 0,
+      "cached": true
+    },
+    {
+      "id": 1777428391367,
+      "timestamp": "2026-04-29T02:06:31.367Z",
+      "plataforma": "tiktok",
+      "keyword": "inteligencia artificial",
+      "resultados": 10,
+      "error": null,
+      "creditos_usados": 0,
+      "cached": true
+    },
+    {
+      "id": 1777428077294,
+      "timestamp": "2026-04-29T02:01:17.294Z",
+      "plataforma": "tiktok",
+      "keyword": "inteligencia artificial",
+      "resultados": 10,
+      "error": null,
+      "creditos_usados": 1,
+      "cached": false
+    },
+    {
+      "id": 1777428054795,
+      "timestamp": "2026-04-29T02:00:54.795Z",
+      "plataforma": "tiktok",
+      "keyword": "inteligencia artificial",
+      "resultados": 0,
+      "error": "aborted",
+      "creditos_usados": 0,
+      "cached": false
+    }
+  ],
+  "stats": {
+    "tiktok": {
+      "llamadas": 4,
+      "creditos": 1,
+      "errores": 1,
+      "cache_hits": 2
+    }
+  },
+  "cache": {
+    "tiktok:inteligencia artificial": {
+      "timestamp": 1777428077290,
+      "datos": [
+        {
+          "titulo": "¿Pagas por aplicaciones de inteligencia artificial sin saber que existen alternativas GRATIS que son incluso mejores? Hoy te traigo el ranking definitivo de las 5 inteligencias artificiales gratuitas que están reventando internet y que muy poca gente conoce todavía. Quédate hasta el final porque la número 1 es una auténtica locura 🤯 🔹 Número 5: ChatGPT. Sí, aunque muchos lo usan, muy pocos aprovechan bien su versión gratuita. Ideal para ideas, textos, planificación y productividad diaria. 🔹 Número 4: N8N. Automatizaciones avanzadas sin pagar Zapier. Conecta herramientas, ahorra horas de trabajo y escala procesos como un pro. 🔹 Número 3: Gamma AI. Presentaciones espectaculares en minutos sin PowerPoint ni diseño. Perfecta para reuniones, clases o propuestas. 🔹 Número 2: Notion AI. Organización, notas inteligentes, resúmenes y productividad total, todo en un solo lugar y gratis. 🥇 Número 1: Proactor AI. Esta es brutal. Transcribe reuniones en tiempo real y además se adelanta a lo que te van a pedir. Te sugiere qué decir, cómo responder y cómo quedar bien incluso con tu jefe. Es como tener un asistente personal en cada reunión. Estas son las mejores herramientas de inteligencia artificial gratuitas de 2016 y todavía estás a tiempo de empezar a usarlas antes que los demás. Guarda este vídeo y compártelo con alguien que aún paga por IA sin necesidad 🚀 #inteligenciaartificial #IAgratis #productividad #herramientasIA #emprendedores",
+          "autor": "Xabi | Inteligencia Artificial",
+          "likes": 3885,
+          "vistas": 207432,
+          "comentarios": 95,
+          "compartidos": 1827,
+          "url": "https://tiktok.com/@undefined/video/7597154706871307542",
+          "thumbnail": {
+            "data_size": 0,
+            "height": 720,
+            "uri": "tos-no1a-p-0037-no/owvrQ5KlWAAgeGGkAQre8A7A6v4MuWHfgQfD8R",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/owvrQ5KlWAAgeGGkAQre8A7A6v4MuWHfgQfD8R~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=46cd7514&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=%2FRM0ZvmkfsMWkU1P40Hloj58wis%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/owvrQ5KlWAAgeGGkAQre8A7A6v4MuWHfgQfD8R~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=e42cb36c&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=lVEx22Vq74MYoGJ7NGdXggsXIuc%3D",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/owvrQ5KlWAAgeGGkAQre8A7A6v4MuWHfgQfD8R~tplv-x7g4mazu7z-crop-80-heic:400:600.jpeg?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=ad49490a&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=W8jEhD6BddV6mzoVezxA6CXejc4%3D"
+            ],
+            "url_prefix": null,
+            "width": 720
+          },
+          "plataforma": "tiktok"
+        },
+        {
+          "titulo": "🔥¡Atención!🔥 El mayor hack de CHATGPT está aquí y estoy a punto de compartirlo contigo.  Ya no tienes que pasar horas aprendiendo sobre Chat GPT.  Guarda este Hack y compártelo con tus amigos. 💡 #chatgpt #chatgpttutorial #Chatgpttricks #chatgptprompts #Inteligenciaartificial #ai #ia #aihack",
+          "autor": "Inteligencia Artificial",
+          "likes": 89599,
+          "vistas": 1488630,
+          "comentarios": 447,
+          "compartidos": 26097,
+          "url": "https://tiktok.com/@undefined/video/7236490219090955566",
+          "thumbnail": {
+            "data_size": 0,
+            "height": 720,
+            "uri": "tos-useast5-p-0068-tx/6703bcec122b40009c0baa9ae716cf67_1684876687",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/6703bcec122b40009c0baa9ae716cf67_1684876687~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=2e416430&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=ATC1JXd8JTNHBBC2fV0LeeHoB20%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/6703bcec122b40009c0baa9ae716cf67_1684876687~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=3d063ca9&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=7SyLtNMJMpLKK%2BpJeW6F9grNj%2Bo%3D",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/6703bcec122b40009c0baa9ae716cf67_1684876687~tplv-x7g4mazu7z-crop-80-heic:400:600.jpeg?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=c8b32669&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=RaW5iEOgAeZMq82yjkkz0vDjivQ%3D"
+            ],
+            "url_prefix": null,
+            "width": 720
+          },
+          "plataforma": "tiktok"
+        },
+        {
+          "titulo": "​💰 ​Disputa bilionária - A Justiça americana começou a julgar um processo que pode influenciar os rumos da inteligência artificial nos Estados Unidos. Antigos parceiros. Hoje, rivais. De um lado, Elon Musk, o homem mais rico do mundo, dono da SpaceX, da Tesla e do X, antigo Twitter. De outro, o também bilionário Sam Altman, líder de uma das maiores empresas de inteligência artificial do mundo: a OpenAI. É essa empresa está no centro da briga. Musk, Altman e outros pesquisadores criaram a OpenAI em 2015. Na época, afirmaram estar preocupados com os riscos da inteligência artificial para a humanidade. O laboratório, até então sem fins lucrativos, prometia compartilhar gratuitamente a tecnologia com o resto do planeta. Veio a disputa de poder e Musk deixou a startup em 2018. Quatro anos depois, a OpenAI lançou o ChatGPT, dando início ao boom da IA. Agora, a empresa vale US$ 730 bilhões - quase R$ 4 trilhões. Musk desenvolveu a própria inteligência artificial, a xAI, e está processando a rival que ele financiou lá atrás. Diz que a OpenAI traiu a missão original e prioriza o lucro.  No tribunal, nesta terça-feira (28), Musk acusou Altman de roubar uma instituição de caridade. A defesa dele apresentou o caso como uma questão moral. A OpenAI respondeu que, apesar de ter um braço comercial, continua sob o comando de uma fundação sem fins lucrativos. O advogado da empresa argumentou que a inveja de Musk começou depois do sucesso OpenAI. Saiba mais no link do artigo.  #g1 #elonmusk #openai #samaltman #tecnologia #chatgpt #JN",
+          "autor": "g1",
+          "likes": 1610,
+          "vistas": 109295,
+          "comentarios": 27,
+          "compartidos": 29,
+          "url": "https://tiktok.com/@undefined/video/7633978581869219073",
+          "thumbnail": {
+            "data_size": 0,
+            "height": 720,
+            "uri": "tos-alisg-p-0037/og61nAgDTErz8VPFEAAqsAI0EDsif4eA8rQXHf",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/og61nAgDTErz8VPFEAAqsAI0EDsif4eA8rQXHf~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=1dd9c5fe&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=pCBjFo%2BIFMCsJ8fDrd11tvuzkwY%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/og61nAgDTErz8VPFEAAqsAI0EDsif4eA8rQXHf~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=dd2c73d1&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=DJTVt%2Fop2qZvuihzk7HpmtM3Dos%3D",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/og61nAgDTErz8VPFEAAqsAI0EDsif4eA8rQXHf~tplv-x7g4mazu7z-crop-80-heic:400:600.jpeg?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=e384e29c&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=ovBTYJwEarAuWmtKSdedytNhlIs%3D"
+            ],
+            "url_prefix": null,
+            "width": 720
+          },
+          "plataforma": "tiktok"
+        },
+        {
+          "titulo": "Propaganda de guerra - Em um novo vídeo de propaganda de guerra feito com inteligência artificial, a mídia estatal iraniana ironizou o ataque de um atirador ao jantar do presidente dos Estados Unidos, Donald Trump, e correspondentes que cobrem a Casa Branca. ➡️ O Irã tem utilizado vídeos de inteligência artificial como forma de propaganda de guerra e para ironizar o desempenho dos Estados Unidos na guerra no Oriente Médio. As imagens têm sido compartilhadas nas redes sociais pela mídia estatal iraniana e por embaixadas do Irã no Ocidente. O vídeo publicado nesta terça reproduz, em desenho animado, a cena do jantar de Trump com os jornalistas, que foi interrompido por tiros quando ocorria, na noite de sábado (25) em um hotel de Washington. A montagem mostra Trump sorrindo após o atirador retratado na propaganda de guerra disparar para cima — o que não ocorreu. Na sequência, agentes de segurança e o próprio atirador também riem no vídeo de inteligência artificial, que termina com o autor dos disparos, Trump e outros personagens em um palco de teatro e agradecendo ao público, sob aplausos. Veja mais no #g1 em 'leia o artigo'. #irã #trump #eua #inteligênciaartificial",
+          "autor": "g1",
+          "likes": 18862,
+          "vistas": 409052,
+          "comentarios": 287,
+          "compartidos": 1077,
+          "url": "https://tiktok.com/@undefined/video/7633839023835876629",
+          "thumbnail": {
+            "data_size": 0,
+            "height": 720,
+            "uri": "tos-alisg-p-0037/owDiZ2oBE25BU1fBww4BvgOKYHAiAADwALZ0Ic",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/owDiZ2oBE25BU1fBww4BvgOKYHAiAADwALZ0Ic~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=a1380258&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=7rlBmMAsuPdSdpXP%2FGrHpqxudwA%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/owDiZ2oBE25BU1fBww4BvgOKYHAiAADwALZ0Ic~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=4f85d5e4&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=l0aViGGuUmZhcmRWquhUezvfJ30%3D",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/owDiZ2oBE25BU1fBww4BvgOKYHAiAADwALZ0Ic~tplv-x7g4mazu7z-crop-80-heic:400:600.jpeg?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=c9ee2f3b&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=dFSdhpvOC%2FmYJXnMCCblI38LO64%3D"
+            ],
+            "url_prefix": null,
+            "width": 720
+          },
+          "plataforma": "tiktok"
+        },
+        {
+          "titulo": "#ASIIRA | #IA, El motor que crea las profesiones del futuro La inteligencia artificial está transformando el mercado laboral con carreras que combinan técnica y creatividad. Desde ingenieros que perfeccionan algoritmos hasta animadores de IA, estas nuevas ocupaciones ya son una realidad en industrias como el cine y los videojuegos. Con una demanda de formación especializada al alza, estas profesiones han dejado de ser una proyección para convertirse en el presente de la economía digital. Una nota de @salma_salmon_dom #AztecaNoticias #Noticias #Información  Cine Videojuegos Inteligencia Artificial IA",
+          "autor": "Azteca Noticias",
+          "likes": 2270,
+          "vistas": 119360,
+          "comentarios": 19,
+          "compartidos": 31,
+          "url": "https://tiktok.com/@undefined/video/7630309454470286612",
+          "thumbnail": {
+            "data_size": 0,
+            "height": 720,
+            "uri": "tos-alisg-p-0037/okKDFC2xECzALD3kEAAdEffSUT5kpIANWBCVg6",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okKDFC2xECzALD3kEAAdEffSUT5kpIANWBCVg6~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=860de1f4&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=M1Gcp4RRdN9dua64hXXIMzDppwo%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okKDFC2xECzALD3kEAAdEffSUT5kpIANWBCVg6~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=eb458ce9&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=jFbDtKP5f5QBZ9OTVN58WOTkvKo%3D",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okKDFC2xECzALD3kEAAdEffSUT5kpIANWBCVg6~tplv-x7g4mazu7z-crop-80-heic:400:600.jpeg?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=212cc746&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=yhAtznHN80ww3cudrx1YBF7BbA4%3D"
+            ],
+            "url_prefix": null,
+            "width": 720
+          },
+          "plataforma": "tiktok"
+        },
+        {
+          "titulo": "¡A seguir las instrucciones! 🤖 En la semana de la inteligencia artificial, los participantes se vieron obligados a ejecutar tareas sin parar en La casa de los famosos Colombia. 😅🧹¿Quién fue el más afectado? 🤔 #lacasadelosfamososcol3",
+          "autor": "CanalRCN",
+          "likes": 243032,
+          "vistas": 3093045,
+          "comentarios": 1908,
+          "compartidos": 2448,
+          "url": "https://tiktok.com/@undefined/video/7633622661289102599",
+          "thumbnail": {
+            "data_size": 0,
+            "height": 720,
+            "uri": "tos-alisg-p-0037/oEfREENW4yjJDAlwWZCNIEeEgAF2BpAB8vDcAE",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEfREENW4yjJDAlwWZCNIEeEgAF2BpAB8vDcAE~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=ac62e250&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=JBCqhWOhHyOH94LEDvPiFBCkV48%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEfREENW4yjJDAlwWZCNIEeEgAF2BpAB8vDcAE~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=5079aab6&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=ygAXTgwpmLFMfBDZryxV07NR8L0%3D",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEfREENW4yjJDAlwWZCNIEeEgAF2BpAB8vDcAE~tplv-x7g4mazu7z-crop-80-heic:400:600.jpeg?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=0b741fcc&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=snvGHw5ymCpogE%2BdtDdgJq6tnaY%3D"
+            ],
+            "url_prefix": null,
+            "width": 720
+          },
+          "plataforma": "tiktok"
+        },
+        {
+          "titulo": "👋 Escucha esto: Hay un chat nuevo llamado Claude que es MEJOR que ChatGPT. 😱 Y por ahora es 100% GRATIS, ajá! GRATIS. 🙌 Sube tus archivos PDF y CSV, Busca en Internet dentro del chat Tiene data hasta el 2023. O sea, está súper ACTUALIZADO. Ok, Claude falla un poco en matemáticas. 🤓 Pero escribe de lo lindo y con mucho flow. 💯 #ia #chatgpt #inteligenciaartificial #Claude #claude2 ",
+          "autor": "Inteligencia Artificial",
+          "likes": 4064,
+          "vistas": 190611,
+          "comentarios": 45,
+          "compartidos": 402,
+          "url": "https://tiktok.com/@undefined/video/7258717937970761003",
+          "thumbnail": {
+            "data_size": 0,
+            "height": 720,
+            "uri": "tos-useast5-p-0068-tx/ee7487f4f0104620b59e095fcf459f15_1690051987",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ee7487f4f0104620b59e095fcf459f15_1690051987~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=b9a6adf0&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=Xv9lgvfMz2%2BCl8LVH5Id4MzgQro%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ee7487f4f0104620b59e095fcf459f15_1690051987~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=d598dde7&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=Wiiv5rKTQ2YZDDG3xbfTBe9w74w%3D",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ee7487f4f0104620b59e095fcf459f15_1690051987~tplv-x7g4mazu7z-crop-80-heic:400:600.jpeg?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=4c57030d&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=DQKR%2BW3rJP%2Fd7z9cYYEnu72yG3E%3D"
+            ],
+            "url_prefix": null,
+            "width": 720
+          },
+          "plataforma": "tiktok"
+        },
+        {
+          "titulo": "Comenta CLAUDE y te mando mi guía 🎁 ¿Sigues perdiendo horas en tareas que la IA ya resolvió por ti? 🤯👇 Muchos conocen Claude, pero pocos saben que tiene 3 \"modos de combate\" distintos según lo que necesites: 1️⃣ Claude Chat: Para pensar, resumir y crear borradores en segundos. 2️⃣ Claude Cowork: Tu agente autónomo que ejecuta tareas mientras tú haces otra cosa. 3️⃣ Claude Code: El aliado definitivo para quienes construyen software y automatizaciones. La diferencia entre trabajar mucho y trabajar inteligente está en saber qué herramienta abrir en cada momento. 🧠 He preparado una Guía Rápida: Domina Claude en 5 Minutos donde te explico el paso a paso exacto para configurar cada modo y los prompts que yo uso para automatizar mi día. Es corta, es práctica y es gratis. 🎁 ¿La quieres? 👇 Comenta la palabra CLAUDE y te la mando ahora mismo por DM. 🚀 #ClaudeAI #InteligenciaArtificial #Productividad #Automatizacion #IAparaNegocios #TechTips #ClaudeCode #GrowthHacking #HerramientasDigitales",
+          "autor": "Pablo Carballo",
+          "likes": 58,
+          "vistas": 1846,
+          "comentarios": 4,
+          "compartidos": 13,
+          "url": "https://tiktok.com/@undefined/video/7631213220325346568",
+          "thumbnail": {
+            "data_size": 0,
+            "height": 720,
+            "uri": "tos-alisg-p-4863-sg/oAf5h43p5BBFVo4EBI7If0EIFkPgApchDv9nE3",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-4863-sg/oAf5h43p5BBFVo4EBI7If0EIFkPgApchDv9nE3~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=69fc314b&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=i4Lm9Ddzi7y%2BFG8UF6Aekcb0Zo4%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-4863-sg/oAf5h43p5BBFVo4EBI7If0EIFkPgApchDv9nE3~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=a3c98582&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=%2Frt9bd%2Bx3LzfkzwGKdEwVK69qqc%3D",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-4863-sg/oAf5h43p5BBFVo4EBI7If0EIFkPgApchDv9nE3~tplv-x7g4mazu7z-crop-80-heic:400:600.jpeg?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=81f9db17&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=VsnqsF4mzrcrkpdDVOsA257%2FaU4%3D"
+            ],
+            "url_prefix": null,
+            "width": 720
+          },
+          "plataforma": "tiktok"
+        },
+        {
+          "titulo": "Descubrí una nueva forma de usar IA. La mayoría todavía la usa para responder preguntas. Pero hoy ya existen agentes que investigan, planifican, ejecutan tareas reales y aprenden con el tiempo. Con herramientas como MiniMax Agent y MaxHermes, podés automatizar procesos, crear equipos digitales y trabajar con una ventaja real. Esto recién empieza. Los que lo entiendan primero, llegan primero. 🚀 #MiniMax #MiniMaxAgent #aitools #InteligenciaArtificial #Productividad ",
+          "autor": "Gaby Biondi",
+          "likes": 1434,
+          "vistas": 117706,
+          "comentarios": 19,
+          "compartidos": 423,
+          "url": "https://tiktok.com/@undefined/video/7632503990000930066",
+          "thumbnail": {
+            "data_size": 0,
+            "height": 720,
+            "uri": "tos-alisg-p-0037/oAPChAefo2QAQMjHIzAcIvLIblANATYfGgDDEs",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAPChAefo2QAQMjHIzAcIvLIblANATYfGgDDEs~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=a7cb66f4&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=bHtWFDaru6xTlq3FUbQi3Ff4v%2Bo%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAPChAefo2QAQMjHIzAcIvLIblANATYfGgDDEs~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=30f62a93&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=Tx7W6VEXvfaE6BNnZD82clkIeVA%3D",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAPChAefo2QAQMjHIzAcIvLIblANATYfGgDDEs~tplv-x7g4mazu7z-crop-80-heic:400:600.jpeg?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=5810a07f&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=NF05CHy%2FPyjGfW7blogIigHQYpI%3D"
+            ],
+            "url_prefix": null,
+            "width": 720
+          },
+          "plataforma": "tiktok"
+        },
+        {
+          "titulo": "🤯 Probé la IA más avanzada del mundo… y esto pasó ¿Puede una inteligencia artificial pensar, crear y decidir mejor que nosotros? En este video probamos una de las IAs más avanzadas del mundo en 2025 y te mostramos resultados reales. Desde respuestas sorprendentes hasta creatividad generativa, esto no es ciencia ficción: es el presente. 🔍 Exploramos: Capacidades reales de la IA Riesgos y dilemas éticos ¿Estamos listos para convivir con una inteligencia que evoluciona cada segundo? 📲 ¿Tú qué opinas? ¿Te emociona o te preocupa esta revolución? Suscríbete a  @TechSonel   para más contenido sobre tecnología útil, IA aplicada y herramientas que sí valen la pena. #techsonel #IA2025 #GPT5 #InteligenciaArtificial #FuturoDigital #TechTok #OpenAI",
+          "autor": "TechSonel",
+          "likes": 46,
+          "vistas": 1743,
+          "comentarios": 1,
+          "compartidos": 45,
+          "url": "https://tiktok.com/@undefined/video/7532290875007847685",
+          "thumbnail": {
+            "data_size": 0,
+            "height": 720,
+            "uri": "tos-maliva-p-0068/o4QrJEIEdAAfUQSpEPKVIPgIGeAHLCASeEARCQ",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-p-0068/o4QrJEIEdAAfUQSpEPKVIPgIGeAHLCASeEARCQ~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=e0f322ef&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=d6TsCCofrz70PL6irhDx%2By697Sg%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-p-0068/o4QrJEIEdAAfUQSpEPKVIPgIGeAHLCASeEARCQ~tplv-x7g4mazu7z-crop-80-heic:400:600.heic?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=85f076fd&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=Fdq5ZAJ7XH2d5uh%2BuDZE12KcUNk%3D",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-p-0068/o4QrJEIEdAAfUQSpEPKVIPgIGeAHLCASeEARCQ~tplv-x7g4mazu7z-crop-80-heic:400:600.jpeg?biz_tag=musically_general.video_cover&dr=9616&ftpl=1&idc=useast5&ps=13740610&refresh_token=6e346f8a&shcp=c1333099&shp=0e6dc556&t=4d5b0474&x-expires=1777449600&x-signature=UGoAORopNuj9b%2Bi5qWJRk51XXno%3D"
+            ],
+            "url_prefix": null,
+            "width": 720
+          },
+          "plataforma": "tiktok"
+        }
+      ]
+    }
+  },
+  "apikeys": {}
+}
