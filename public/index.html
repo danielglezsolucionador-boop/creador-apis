@@ -197,7 +197,7 @@ async function buscar() {
   const body = esTwitter ? { handle, plataforma: plat } : { keyword, plataforma: plat };
 
   try {
-    const r = await fetch('/api/buscar', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+    const r = await fetch('https://creador-apis.vercel.app/api/buscar', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
     const data = await r.json();
     cargarStats();
 
@@ -242,7 +242,7 @@ async function buscar() {
 
 async function cargarStats() {
   try {
-    const r = await fetch('/api/stats');
+    const r = await fetch('https://creador-apis.vercel.app/api/stats');
     const s = await r.json();
     document.getElementById('statLlamadas').textContent = s.total_llamadas || 0;
     document.getElementById('statCreditos').textContent = s.total_creditos_usados || 0;
@@ -253,7 +253,7 @@ async function cargarStats() {
 async function cargarLogs() {
   document.getElementById('logsContenido').innerHTML = '<div class="loading"><div class="spinner"></div></div>';
   try {
-    const r = await fetch('/api/logs?limit=50');
+    const r = await fetch('https://creador-apis.vercel.app/api/logs?limit=50');
     const data = await r.json();
     if (!data.logs.length) {
       document.getElementById('logsContenido').innerHTML = '<div class="empty">Sin logs aún</div>';

@@ -1,6 +1,5 @@
 const fs = require('fs');
-let c = fs.readFileSync('server.js', 'utf8');
-c = c.replace("express.static('.')", "express.static('public')");
-c = c.replace("'/index.html'", "'/public/index.html'");
-fs.writeFileSync('server.js', c);
+let c = fs.readFileSync('public/index.html', 'utf8');
+c = c.replaceAll("fetch('/api/", "fetch('https://creador-apis.vercel.app/api/");
+fs.writeFileSync('public/index.html', c);
 console.log('listo');
