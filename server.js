@@ -8,7 +8,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static('.'));
+app.use(express.static('public'));
 
 const SC_KEY = process.env.SCRAPECREATORS_API_KEY;
 const DB_PATH = path.join(__dirname, 'db.json');
@@ -293,7 +293,7 @@ app.post('/api/keys', (req, res) => {
 
 // GET / — dashboard
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 const PORT = process.env.PORT || 3002;
 if (process.env.VERCEL) {
